@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script src="./script/parallax.min.js"></script>
+    <script src='https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.css' rel='stylesheet' />
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Fitness File</title>
+</head>
+
+<body>
+    <nav class="mobile-nav" id="mobile-nav">
+        <label for="cross" class="fa fa-times" id="closebtn"></label>
+        <ul>
+            <li>
+                <a href="#">Home</a>
+            </li>
+            <li>
+                <a href="#services">Sevices</a>
+            </li>
+            <li>
+                <a href="#contact">Contact</a>
+            </li>
+            <li>
+                <a href="tel:+">Call Us</a>
+            </li>
+            <li>
+                <a href="mailto:">Email Us</a>
+            </li>
+        </ul>
+    </nav>
+    <nav>
+        <div class="logo-text">
+            Fitness File
+        </div>
+        <div class="check">
+            <label for="chbtn" class="fa fa-bars" id="openbtn"></label>
+        </div>
+        <ul class="list_contact">
+            <li>
+                <a href="tel:+">Call Us</a>
+            </li>
+            <li>
+                <a href="mailto:">Email Us</a>
+            </li>
+        </ul>
+        <ul class="nav">
+            <li>
+                <a href="#">Home</a>
+            </li>
+            <li>
+                <a href="#services">Sevices</a>
+            </li>
+            <li>
+                <a href="#contact">Contact</a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="parallax-window hero" data-parallax="scroll" data-image-src="./images/hero.jpg"></div>
+
+    <div class="parallax-window middle" data-parallax="scroll" data-image-src="./images/middle.jpg">
+        <div class="features" id="services">
+            <h1>Our Services</h1>
+            <div class="flex-container">
+                <div class="feature">
+                    <img class="svg" src="./svg/gym.svg" alt="GYM" width="200px" height="200px">
+                    <div class="feature_text">
+                        <h4>GYM</h4>
+                        <br>
+                        <p>Work-out in top-of-the-line Gym with quality Equipments. Also get an exclusixe private trainer on go.</p>
+                    </div>
+                </div>
+                <div class="feature">
+                    <img class="svg" src="./svg/massage.svg" alt="Massage" width="200px" height="200px">
+                    <div class="feature_text">
+                        <h4>Massage</h4>
+                        <br>
+                        <p>Enjoy our mind relaxing and stress relieving massage from our professional masseuses.</p>
+                    </div>
+                </div>
+                <div class="feature">
+                    <img class="svg" src="./svg/aerobics.svg" alt="Aerobics" width="200px" height="200px">
+                    <div class="feature_text">
+                        <h4>Zumba Aerobics</h4>
+                        <br>
+                        <p>Flex your body with Zumba and Aerobics techiniques from our Zumba instructors</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="testimonials">
+            <h1>What people say about us</h1>
+            <div class="flex-container">
+                <div class="testimonial">
+                    <div class="rating">
+                        <i class="fa fa-star checked"></i>
+                        <i class="fa fa-star checked"></i>
+                        <i class="fa fa-star checked"></i>
+                        <i class="fa fa-star checked"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                    <div class="remark" style="font-size: 14px;margin-top: 10px;">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam et pretium diam."</div>
+                </div>
+                <div class="testimonial">
+                    <div class="rating">
+                        <i class="fa fa-star checked"></i>
+                        <i class="fa fa-star checked"></i>
+                        <i class="fa fa-star checked"></i>
+                        <i class="fa fa-star checked"></i>
+                        <i class="fa fa-star checked"></i>
+                    </div>
+                    <div class="remark" style="font-size: 14px;margin-top: 10px;">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam et pretium diam."</div>
+                </div>
+                <div class="testimonial">
+                    <div class="rating">
+                        <i class="fa fa-star checked"></i>
+                        <i class="fa fa-star checked"></i>
+                        <i class="fa fa-star checked"></i>
+                        <i class="fa fa-star checked"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                    <div class="remark" style="font-size: 14px;margin-top: 10px;">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam et pretium diam."</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="register">
+            <h1>Register Now</h1>
+            <h4>Start Your free 7-Day Trial</h4>
+            <form class="form">
+                <input type="text" name="name" id="name" placeholder="Your Name" class="full">
+                <input type="tel" name="phone" id="phone" placeholder="Your Number" class="full">
+                <input type="email" name="email" id="email" placeholder="your_email@example.com" class="full">
+                <div class="registerbtns">
+                    <input type="checkbox" name="newsletter" id="newscheck" checked> Subscribe to our newsletter
+                    <br>
+                    <input type="checkbox" name="TC" id="tc" checked> I agree To the <a href="http://">Terms and Conditions</a> and <a href="http://"> the Privacy Policy</a>
+                </div>
+                <input type="submit" value="Submit" id="submit" class="submit" class="full">
+            </form>
+        </div>
+    </div>
+    <div class="contact" id="contact">
+        <div class="written">
+            <p>
+                Email: <a href="mailto:">your_email@example.com</a>
+                <br>
+                <br> Phone: <a href="tel:+">Your Number</a>
+                <br>
+                <br>
+                <Address>
+                    Address Line 1<br>
+                    Address Line 2<br>
+                    Address Line 3
+                </Address>
+            </p>
+        </div>
+        <div class="map">
+            <div id='map' style='width: 100%; height: 100%;'></div>
+            <script>
+                mapboxgl.accessToken = 'pk.eyJ1Ijoic2F0dmlrdmlybWFuaSIsImEiOiJja2VqeGpiODExeGdyMnlveXN0NXIwNm02In0.MFR4gJp7jraf-bPV59eBjA';
+                var map = new mapboxgl.Map({
+                    container: 'map',
+                    style: 'mapbox://styles/mapbox/dark-v10',
+                    center: [76.58, 28.90],
+                    zoom: 9
+                });
+                var marker = new mapboxgl.Marker()
+                    .setLngLat([76.5848, 28.9031])
+                    .addTo(map);
+            </script>
+        </div>
+    </div>
+    <script src="./script/index.js"></script>
+</body>
+
+</html>

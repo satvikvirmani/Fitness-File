@@ -1,0 +1,463 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Ubuntu&family=Varela&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+}
+
+.mobile-nav {
+    font-family: 'Open Sans', sans-serif;
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 50%;
+    height: 100%;
+    background: #000;
+    z-index: 999;
+    padding: 0px;
+    display: none;
+}
+
+.mobile-nav a {
+    text-decoration: none;
+}
+
+.fa-times {
+    font-size: 2rem;
+    float: right;
+    color: #ffffff;
+}
+
+.mobile-nav ul {
+    margin-top: 100px;
+    float: none;
+    list-style: none;
+}
+
+.mobile-nav ul li {
+    margin: 15px 0 15px 0;
+}
+
+.mobile-nav ul li a {
+    color: #ffffff;
+}
+
+nav {
+    font-family: 'Open Sans', sans-serif;
+    position: fixed;
+    height: 80px;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 99;
+}
+
+.logo-text {
+    margin: 0 100px;
+    font-size: 2.5rem;
+    line-height: 80px;
+    float: left;
+    color: #ffffff;
+}
+
+.fa-bars {
+    position: absolute;
+    right: 5%;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #ffffff;
+    font-size: 2.5rem;
+    display: none;
+}
+
+.nav {
+    list-style: none;
+    float: right;
+    margin-right: 100px;
+}
+
+.nav li {
+    display: inline;
+    margin: 0 30px;
+}
+
+.list_contact {
+    list-style: none;
+    float: right;
+    margin-right: 30px;
+}
+
+.list_contact li {
+    display: inline;
+    margin: 0 10px;
+}
+
+.nav li a,
+.list_contact li a {
+    text-decoration: none;
+    line-height: 80px;
+    color: #ffffff;
+}
+
+.nav li a {
+    font-size: 18px;
+}
+
+.list_contact li a {
+    font-size: 12px;
+}
+
+.hero {
+    height: 700px;
+    min-height: 400px;
+    background: transparent;
+}
+
+.middle {
+    padding: 30px 0;
+    height: fit-content;
+    min-height: 400px;
+    background: transparent;
+}
+
+.features {
+    font-family: 'Varela', sans-serif;
+    width: 100%;
+    height: max-content;
+    background: transparent;
+}
+
+.features h1,
+.testimonials h1,
+.register h1 {
+    font-size: 2rem;
+    margin: 30px auto;
+    text-align: center;
+    color: #ffffff;
+    mix-blend-mode: difference;
+    will-change: opacity;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.features h1 {
+    margin: 0 auto 30px auto;
+}
+
+.features h1::after,
+.testimonials h1::after,
+.register h1::after {
+    content: "";
+    display: block;
+    margin: 0 auto;
+    padding-top: 8px;
+    border-bottom: 2px solid #00ced1;
+}
+
+.features h1::after {
+    width: 150px;
+}
+
+.testimonials h1::after {
+    width: 300px;
+}
+
+.register h1::after {
+    width: 150px;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.feature {
+    position: relative;
+    width: 300px;
+    height: 400px;
+}
+
+.svg {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.feature_text {
+    position: relative;
+    margin-top: 220px;
+    color: #ffffff;
+    mix-blend-mode: difference;
+    will-change: opacity;
+}
+
+.feature_text h4::after {
+    position: absolute;
+    top: 10%;
+    content: "";
+    display: inline-block;
+    margin-left: 10px;
+    width: 60%;
+    border-bottom: 2px solid darkturquoise;
+    mix-blend-mode: difference;
+    will-change: opacity;
+}
+
+.testimonials {
+    font-family: 'Varela', sans-serif;
+    width: 100%;
+    height: max-content;
+}
+
+.testimonial {
+    margin-top: 40px;
+    width: 300px;
+    height: 150px;
+}
+
+.rating {
+    width: max-content;
+    margin: 0 auto;
+}
+
+.remark {
+    color: #ffffff;
+    mix-blend-mode: difference;
+    will-change: opacity;
+}
+
+.checked {
+    color: orange;
+}
+
+.register {
+    font-family: 'Varela', sans-serif;
+}
+
+.register h1 {
+    margin: 15px 0;
+    color: #ffffff;
+    font-family: 'Ubuntu', sans-serif;
+    mix-blend-mode: difference;
+    will-change: opacity;
+}
+
+.register h4 {
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+    color: #ffffff;
+    mix-blend-mode: difference;
+    will-change: opacity;
+}
+
+.register .form {
+    background: #fff;
+    margin: 0 auto;
+    padding: 20px;
+    width: 400px;
+    height: 400px;
+    position: relative;
+    border-radius: 20px;
+}
+
+.register .form .full {
+    margin: 15px auto;
+    width: 100%;
+    height: 28px;
+    border: 2px solid;
+    border-color: #b0c4de;
+    border-radius: 5px;
+}
+
+.register .form .full:active,
+.register .form .full:focus {
+    border-color: #5fc9f8;
+}
+
+#submit {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 30px auto 0 auto;
+    width: 250px;
+    height: 30px;
+    background: #5fc9f8;
+    border-radius: 10px;
+    border: 1px solid #5fc9f8;
+}
+
+.register .full::placeholder {
+    text-align: center;
+}
+
+.contact {
+    font-family: 'Varela', sans-serif;
+    padding: 80px 0;
+    width: 100%;
+    height: 300px;
+    background-color: #2d3436;
+    background-image: linear-gradient(315deg, #2d3436 0%, #000000 74%);
+}
+
+.written {
+    color: #fff;
+    padding: 50px;
+    width: max-content;
+    height: 100%;
+    float: left;
+}
+
+.written a {
+    color: #5fc9f8;
+}
+
+.map {
+    width: 50%;
+    height: 100%;
+    float: right;
+}
+
+.newsletter input {
+    width: 10px;
+    height: min-content;
+}
+
+.registerbtns {
+    font-size: 0.75rem;
+}
+
+@media (max-width: 1100px) {
+    .nav {
+        margin-right: 30px;
+    }
+    .nav li {
+        margin: 0 10px;
+    }
+    .list_contact {
+        margin-right: 10px;
+    }
+    .list_contact li {
+        margin: 0 10px;
+    }
+    .nav li a,
+    .list_contact li a {
+        text-decoration: none;
+        line-height: 80px;
+        color: #ffffff;
+    }
+    .nav li a {
+        font-size: 1rem;
+    }
+    .list_contact li a {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 900px) {
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    .mobile-nav {
+        padding: 30px;
+    }
+    .fa-times {
+        font-size: 2rem;
+    }
+    .mobile-nav ul {
+        margin-top: 50px;
+    }
+    .logo-text {
+        margin: 0 50px;
+        font-size: 2rem;
+    }
+    .fa-bars {
+        font-size: 2rem;
+        display: block;
+    }
+    .features h1,
+    .testimonials h1,
+    .register h1 {
+        font-size: 1.5rem;
+    }
+    .features h1::after {
+        width: 30%;
+    }
+    .testimonials h1::after {
+        width: 60%;
+    }
+    .register h1::after {
+        width: 30%;
+    }
+    .flex-container {
+        flex-direction: column;
+    }
+    .feature {
+        margin: auto;
+        width: 80%;
+        height: fit-content;
+    }
+    .feature_text {
+        margin-top: 200px;
+    }
+    .feature_text h4::after {
+        width: 30%;
+    }
+    .testimonial {
+        margin: 0 auto;
+        width: 80%;
+    }
+    .rating {
+        width: fit-content;
+    }
+    #submit {
+        width: 50%;
+    }
+    .register h4 {
+        font-size: 0.75rem;
+    }
+    .register .form {
+        margin: 20px auto;
+        padding: 10px;
+        width: 80%;
+        height: min-content;
+        position: relative;
+    }
+    .register .form .full {
+        margin: 8px auto;
+    }
+    #submit {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        margin: 30px auto;
+        width: 250px;
+    }
+    .contact {
+        padding: 0;
+    }
+    .register .full::placeholder {
+        text-align: center;
+    }
+    .written {
+        margin-top: 50px;
+        padding: 50px;
+        width: max-content;
+        height: min-content;
+        float: none;
+        font-size: 0.8rem;
+    }
+    .map {
+        width: 100%;
+        height: 200px;
+        float: none;
+    }
+    .nav,
+    .list_contact {
+        display: none;
+    }
+}
